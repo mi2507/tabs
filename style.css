@@ -1,0 +1,305 @@
+body {
+  margin: 16px;
+}
+.title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 42px 20px 34px;
+}
+
+@media only screen and (min-width: 960px) {
+  .title {
+    font-size: 48px;
+    line-height: 71px;
+  }
+}
+
+.tab-1 {
+  border-radius: 8px 0px 0px 0px;
+}
+
+.tab-2 {
+  border-radius: 0px 8px 0px 0px;
+}
+
+.tabs {
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+  /* box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); */
+}
+
+@media only screen and (min-width: 960px) {
+  .tabs {
+    display: flex;
+    justify-content: center;
+    box-shadow: none;
+  }
+}
+
+.tab {
+  float: left;
+}
+
+@media only screen and (min-width: 960px) {
+  .tab {
+    margin: 12px;
+  }
+}
+
+.tab label {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  background: #f4f4f4;
+  padding: 13px 40px 19px 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width: 960px) {
+  .tab label {
+    display: none;
+  }
+}
+
+.tab [type="radio"] {
+  display: none;
+}
+
+.content {
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  position: absolute;
+  top: 44px;
+  background: #ffffff;
+  right: 0;
+  height: 240%;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 960px) {
+  .content {
+    overflow: hidden;
+    position: initial;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    height: 532px;
+    width: 387px;
+    display: inline-block;
+  }
+}
+
+.text-desktop {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #414141;
+  display: none;
+}
+
+@media only screen and (min-width: 960px) {
+  .text-desktop {
+    display: block;
+    margin: 32px 0px 24px;
+  }
+}
+
+.image {
+  width: 100%;
+}
+
+/* .title{
+  display: none;
+} */
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(74, 74, 74, 0.8);
+  margin: 32px;
+}
+
+@media only screen and (min-width: 960px) {
+  .text {
+    margin: 24px 38px 40px;
+  }
+}
+
+[type="radio"]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+  color: rgba(74, 74, 74, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 13px 25px 21px 30px;
+}
+
+[type="radio"]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+/* BLOCO HONDA-SEGUROS - PCD */
+
+ /* .seguro-honda{
+  margin-top: 100%;
+}
+
+@media only screen and (min-width: 960px) {
+  .seguro-honda {
+    margin-top: auto;
+    display: flex;
+  }
+}
+
+.seguro__pcd__content {
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+h3:after {
+  content: " PCD";
+  color: red;
+}
+
+.seguro__pcd__title {
+  margin-top: 42px;
+  margin-bottom: 8px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.seguro__pcd__title2 {
+  text-align: center;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 42px;
+  margin-bottom: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.seguro__pcd__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(74, 74, 74, 0.8);
+}
+
+@media only screen and (min-width: 960px) {
+  .seguro__pcd {
+    width: 64%;
+    text-align: initial;
+    margin-left: 32px;
+  }
+}
+
+.seguro__pcd__subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #cc0000;
+  margin: 32px;
+}
+
+ul {
+  list-style: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(74, 74, 74, 0.8);
+}
+li:before {
+  content: url("./img/Vector__seguros.png");
+}
+
+ @media only screen and (min-width: 960px) {
+  ul:before {
+    content: url("./img/Vector__seguros.png");
+  }
+} 
+
+.btn {
+  width: 319px;
+  height: 48px;
+  left: 30px;
+  top: 5154px;
+  background: #cc0000;
+  border-radius: 48px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 16px;
+}
+
+@media only screen and (min-width: 960px) {
+  .btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .seguro__pcd__img {
+    flex-basis: 50%;
+  }
+}
+
+.seguro__pcd__img__desktop {
+  width: 100%;
+}
+
+

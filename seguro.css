@@ -1,0 +1,118 @@
+.seguro-honda {
+  margin-top: 100%;
+}
+
+@media only screen and (min-width: 960px) {
+  .seguro-honda {
+    margin-top: auto;
+    display: flex;
+  }
+}
+
+.seguro-honda__image-desktop {
+  width: 99%;
+}
+
+@media only screen and (min-width: 960px) {
+  .seguro-honda__image-desktop{
+    width: 100%;
+  }
+}
+
+.seguro-honda__title{
+  
+  margin-top: 42px;
+  margin-bottom: 8px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.seguro-honda__subtitle {
+  text-align: center;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 42px;
+  margin-bottom: 24px;
+  color: #000000;
+}
+.seguro-honda__red {
+  color: #cc0000;
+  text-transform: uppercase;
+}
+
+.seguro-honda__description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(74, 74, 74, 0.8);
+}
+
+.seguro-honda__list__title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #cc0000;
+  margin: 32px;
+}
+
+li:before {
+  content: url("./img/Vector__seguros.png");
+}
+
+ul {
+  list-style: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(74, 74, 74, 0.8);
+}
+
+.seguro-honda__btn{
+  width: 319px;
+  height: 48px;
+  background: #cc0000;
+  border-radius: 48px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 16px;
+}
+
+@media only screen and (min-width: 960px) {
+  .seguro-honda__btn{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+
+
+
+
+/* mudando a cor da ultima letra com pseudo elemento
+/* h3:after {
+  content: " PCD";
+  color: red;
+} */
